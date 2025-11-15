@@ -1,7 +1,13 @@
+[Ubuntu 22.04]
 
+More things to install!
+
+1. Quarto 
 
 wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.8.26/quarto-1.8.26-linux-amd64.deb
 sudo dpkg -i quarto-1.8.26-linux-amd64.deb 
+
+2. R and some packages
 
 sudo apt update -qq
 sudo apt install --no-install-recommends software-properties-common dirmngr
@@ -12,3 +18,4 @@ sudo apt install --no-install-recommends r-base
 sudo Rscript -e "install.packages(c('knitr', 'rmarkdown'), repos='https://cran.rstudio.com/')"
 
 sudo Rscript tools/dependencies/install_packages.R
+
